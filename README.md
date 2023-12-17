@@ -15,6 +15,15 @@ REMOTE_FOLDER="/path/to/mirror/"
 SLEEP_INTERVAL=600
 ```
 
+## Installation
+
+```sh
+python3 -m venv venv
+ln -s venv/bin/activate .
+. ./activate
+pip install -r requirements.txt
+```
+
 ## Usage
 
 ```sh
