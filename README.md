@@ -24,5 +24,7 @@ python3 file_check.py
 ## Chia DataLayer™
 
 [Chia DataLayer - True Data Integrity On a Blockchain](https://www.chia.net/datalayer/)
+
 [DataLayer User Guide](https://docs.chia.net/guides/datalayer-user-guide/)
+
 [Chia DataLayer™️ Explainer | Chia Network](https://www.youtube.com/watch?v=gjx67gCnGdA)
