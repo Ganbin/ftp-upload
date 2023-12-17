@@ -12,4 +12,5 @@ FTP_USER=ftpuser
 FTP_PASS=ftppassword
 LOCAL_FOLDER="/path/to/.chia/mainnet/data_layer/db/server_files_location_mainnet/"
 REMOTE_FOLDER="/path/to/mirror/"
+SLEEP_INTERVAL=600
 ```

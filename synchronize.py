@@ -48,13 +48,18 @@ def synchronize_folders(local_folder, remote_folder, ftp_host, ftp_user, ftp_pas
     # Close the FTP connection
     ftp.quit()
 
-if __name__ == "__main__":
+def run():
     # Set your FTP credentials and paths
     ftp_host = os.getenv('FTP_HOST')
     ftp_user = os.getenv('FTP_USER')
     ftp_passwd = os.getenv('FTP_PASS')
     local_folder = os.getenv('LOCAL_FOLDER')
     remote_folder = os.getenv('REMOTE_FOLDER')
+    
+    print(f"Synchronize: {local_folder} with {ftp_host}/{remote_folder}")
 
     # Synchronize folders
     synchronize_folders(local_folder, remote_folder, ftp_host, ftp_user, ftp_passwd)
+
+if __name__ == "__main__":
+    run()
