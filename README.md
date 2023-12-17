@@ -1,16 +1,28 @@
 # ftp-upload
 
-A simple script to upload files to ftp server
+This script is designed to monitor a specific folder and upload any new files to an FTP server at regular intervals.
 
-I use it to push new file from Chia DataLayer™ into my own mirror.
+It's particularly useful for mirroring new files from Chia DataLayer™ to a personal server.
 
-Make sur to create a file named `.env` with the following content:
+To use this script, ensure you create a `.env` file with the necessary configurations.
 
-```
-FTP_HOST=ftp.example.com
-FTP_USER=ftpuser
-FTP_PASS=ftppassword
+```py
+FTP_HOST="ftp.example.com"
+FTP_USER="ftpuser"
+FTP_PASS="ftppassword"
 LOCAL_FOLDER="/path/to/.chia/mainnet/data_layer/db/server_files_location_mainnet/"
 REMOTE_FOLDER="/path/to/mirror/"
 SLEEP_INTERVAL=600
 ```
+
+## Usage
+
+```sh
+python3 file_check.py
+```
+
+## Chia DataLayer™
+
+[Chia DataLayer - True Data Integrity On a Blockchain](https://www.chia.net/datalayer/)
+[DataLayer User Guide](https://docs.chia.net/guides/datalayer-user-guide/)
+[Chia DataLayer™️ Explainer | Chia Network](https://www.youtube.com/watch?v=gjx67gCnGdA)
